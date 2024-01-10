@@ -161,7 +161,7 @@ GEM
     parser (3.3.0.2)
       ast (~> 2.4.1)
       racc
-    psych (5.1.2)
+    psych (4.0.6)
       stringio
     public_suffix (5.0.4)
     puma (6.4.2)
@@ -286,6 +286,7 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
+  psych (~> 4.0)
   puma (>= 5.0)
   rails (~> 7.1.2)
   rubocop (>= 1.0, < 2.0)
