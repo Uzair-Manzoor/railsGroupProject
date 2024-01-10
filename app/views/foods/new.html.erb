@@ -1,2 +1,17 @@
-<h1>Foods#new</h1>
-<p>Find me in app/views/foods/new.html.erb</p>
+<h1>Food Form</h1>
+
+<%= form_with(model:@food_form, url: foods_path, local: true) do |form| %>
+    <%= form.label :name, 'Food Name:', class: "" %>
+    <%= form.text_field :name %><br />
+
+    <%= form.label :measurement_unit, 'Measurement Unit(g/kg)', class: "" %>
+    <%= form.text_field :measurement_unit %><br />
+
+    <%= form.label :price, 'Unit Price($)', class: "" %>
+    <%= form.number_field :price %><br />
+
+    <%= form.label :quantity, 'Quantity', class: "" %>
+    <%= form.number_field :quantity %><br />  
+
+    <%= form.submit 'Submit Food', class: "" %>
+<% end %>

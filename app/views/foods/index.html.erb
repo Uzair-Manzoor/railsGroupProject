@@ -1,0 +1,26 @@
+<h1> Food list </h1>
+<button><%= link_to "Add Food", new_food_path %></button>
+
+<table>
+<thead>
+    <tr>
+    <th>Name</th>
+    <th>Measurement Unit</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    </tr>
+</thead>
+
+<tbody>
+    <% @foods.each do |food| %>
+        <tr>
+        <td><%= food.name %></td>
+        <td><%= food.measurement_unit %></td>
+        <td><%= food.price %></td>
+        <td><%= food.quantity %></td>
+      </tr>
+    <% end %>
+</tbody>
+</table>
+
+<button><%= link_to 'Create Recipe', new_recipe_path %></button>

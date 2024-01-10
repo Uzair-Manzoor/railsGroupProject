@@ -13,4 +13,10 @@ class RecipesController < ApplicationController
       render :new
     end
   end
+
+  private
+
+  def recipe_form_params
+    params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :description, :is_public, :quantity)
+  end
 end

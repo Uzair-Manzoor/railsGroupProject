@@ -1,0 +1,8 @@
+<section class="recipe-list-container">
+    <% @recipes.each do |recipe| %>
+        <div class="recipe-content">
+            <p><%= link_to recipe.name, recipe_path(recipe) %></p>
+            <p><%= recipe.description %></p>
+        </div>
+        <% end %>
+</section>
