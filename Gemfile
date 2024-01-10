@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.1.4'
+ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.2'
@@ -71,3 +71,5 @@ end
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'devise', '~> 4.8'
+
+gem 'psych', '~> 4.0'
