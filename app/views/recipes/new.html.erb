@@ -1,2 +1,18 @@
-<h1>Recipes#new</h1>
-<p>Find me in app/views/recipes/new.html.erb</p>
+<h1>Recipe Form</h1>
+
+<%= form_with(model:@recipe_form, url: recipes_path, local: true) do |form| %>
+    <%= form.label :name, 'Recipe Name:', class: "" %>
+    <%= form.text_field :name %><br />
+
+    <%= form.label :preparation_time, 'Preparation Time(hrs)', class: "" %>
+    <%= form.text_field :preparation_time %><br />
+
+    <%= form.label :cooking_time, 'Cooking Time(hrs)', class: "" %>
+    <%= form.text_field :cooking_time %><br />
+    
+    <%= form.label :description, 'Description', class: "" %>
+    <%= form.text_field :description %><br />
+    
+    <%= form.submit 'Submit Food', class: "" %>
+<% end %>
+
