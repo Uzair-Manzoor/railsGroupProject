@@ -4,7 +4,7 @@ class FoodsController < ApplicationController
   end
   
   def new
-    @food_form = Foods.new
+    @food_form = Food.new
   end
 
   def create
