@@ -1,4 +1,7 @@
 class RecipesController < ApplicationController
+  def index
+    @recipes = Recipe.all
+  end
   def new
     @recipe_form = Recipe.new
   end
