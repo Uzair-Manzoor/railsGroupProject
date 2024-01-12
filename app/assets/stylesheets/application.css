@@ -157,8 +157,7 @@ h2::after {
 
   .left,
   .left-food,
-  .left-recipe,
-  .left-inventory {
+  .left-recipe {
     height: 200px;
   }
 }
@@ -305,7 +304,7 @@ tbody tr:hover {
   gap: 2rem;
   padding: 2rem;
   margin: 0 5rem;
-  border: 1px solid #ddd;
+  border: 1px solid #dadada;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
