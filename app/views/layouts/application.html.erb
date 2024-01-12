@@ -33,21 +33,6 @@
         }
       }
 
-      if (event.target.id === 'openInventoryModal') {
-        let inventoryModal = document.getElementById('inventoryModal');
-        if (inventoryModal) {
-          inventoryModal.style.display = 'block';
-        }
-      }
-
-      if (event.target.id === 'close-button-inventory') {
-        let inventoryModal = document.getElementById('inventoryModal');
-        if (inventoryModal) {
-          inventoryModal.style.display = 'none';
-        }
-      }
-    });
-
     document.addEventListener("turbo:load", function() {
       var addFoodLink = document.getElementById("add-food-link");
       var popupModal = document.getElementById("popup-modal");

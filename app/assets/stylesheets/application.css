@@ -135,12 +135,6 @@ h2::after {
   height: 100%;
 }
 
-.left-inventory {
-  background: url("https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGludmVudG9yeSUyMGZvb2R8ZW58MHwwfDB8fHww") no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
 .field textarea {
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -180,8 +174,7 @@ h2::after {
 
   .left,
   .left-food,
-  .left-recipe,
-  .left-inventory {
+  .left-recipe {
     height: 150px;
   }
 
@@ -264,11 +257,6 @@ td a {
 .public-recipe-link a {
   text-decoration: none;
   color: #000;
-}
-
-.inventory a {
-  text-decoration: none;
-  color: black;
 }
 
 .hero > a:hover {
@@ -466,38 +454,6 @@ select {
 .shopping-details div {
   display: grid;
   gap: 2rem;
-}
-
-.inventory-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 60%;
-  max-width: 400px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.inventory-modal h2 {
-  text-align: center;
-}
-
-.inventory-modal span {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #333;
-}
-
-.inventory-modal.active {
-  display: block;
 }
 
 .public-recipe {

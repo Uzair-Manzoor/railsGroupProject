@@ -32,7 +32,6 @@ class RecipesController < ApplicationController
 
   def show
     @foods = current_user.foods
-    @inventories = Inventory.all
     @recipe = current_user.recipes.includes(:recipe_foods).find(params[:id])
     @recipes = Recipe.find(params[:id])
   end
