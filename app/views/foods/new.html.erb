@@ -1,17 +1,25 @@
-<h1>Food Form</h1>
+<section class="auth-forms">
+  <div class="form-box">
+    <div class="left-food"></div>
+    <div class="right">
+      <h2>Add Food</h2>
+      <%= form_with(model: @food) do |f| %>
+        <div class="field">
+          <%= f.text_field :food, placeholder: "Food name", autofocus: true, required: true %>
+        </div>
 
-<%= form_with(model:@food_form, url: foods_path, local: true) do |form| %>
-    <%= form.label :name, 'Food Name:', class: "" %>
-    <%= form.text_field :name %><br />
+        <div class="field">
+          <%= f.text_field :measurement_unit, placeholder: "Measurement unit", required: true %>
+        </div>
 
-    <%= form.label :measurement_unit, 'Measurement Unit(g/kg)', class: "" %>
-    <%= form.text_field :measurement_unit %><br />
-
-    <%= form.label :price, 'Unit Price($)', class: "" %>
-    <%= form.number_field :price %><br />
-
-    <%= form.label :quantity, 'Quantity', class: "" %>
-    <%= form.number_field :quantity %><br />  
-
-    <%= form.submit 'Submit Food', class: "" %>
-<% end %>
+        <div class="field">
+          <%= f.text_field :price, placeholder: "Unit price", required: true %>
+        </div>
+        
+        <div class="actions">
+          <%= f.submit "Add Food" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

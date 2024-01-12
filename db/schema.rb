@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_01_10_164024) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "adminpack"
   enable_extension "plpgsql"
 
   create_table "foods", force: :cascade do |t|
@@ -23,6 +24,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_10_164024) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_foods_on_user_id"
+  end
+
+  create_table "pgtest", id: false, force: :cascade do |t|
+    t.string "testval", limit: 10
   end
 
   create_table "recipe_foods", force: :cascade do |t|
