@@ -7,7 +7,7 @@
           <div class="recipe-public">
             <p> Public: </p>
               <%= form_with url:recipe_path(@recipe.id), :method => :patch do |f| %>
-                <%= f.check_box :public, onchange: "this.form.submit();" %>
+                <%= f.check_box :public, checked: @recipe.public, onchange: "this.form.submit();" %>
               <% end %>
           </div>
           <p> Preparation time: <%= @recipe.preparation_time %> min</p>
