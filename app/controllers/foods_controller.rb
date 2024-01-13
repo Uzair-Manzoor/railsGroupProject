@@ -18,7 +18,7 @@ class FoodsController < ApplicationController
 
     respond_to do |format|
       if @food.save
-        format.html { redirect_to foods_path, notice: 'Food was created successfully.' }
+        format.html { redirect_to foods_path, notice: 'Food was created successfully' }
       else
         format.html { render :new, status: :unprocessable_entity }
       end
@@ -38,6 +38,6 @@ class FoodsController < ApplicationController
   private
 
   def food_params
-    params.require(:Food).permit(:food, :measurement_unit, :price)
+    params.require(:food).permit(:food, :measurement_unit, :price)
   end
 end
